@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", "Pretendard", sans-serif;
+  --font-serif: "Newsreader", "Iowan Old Style", serif;
+  --color-bg: #f3efe6;
+  --color-surface: #fbf8f2;
+  --color-ink: #1c1915;
+  --color-muted: #6e675e;
+  --color-line: #e3dcd0;
+  --color-accent: #1f4d3a;
+  --color-accent-fg: #f4f7f4;
+  --color-caution: #8a5a12;
+  --color-caution-bg: #f6ecd9;
+  --color-missing: #8a847a;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    text-wrap: pretty;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "지수 밸류에이션 이력",
+      "hasCanvas": false,
+      "bodyTextLen": 701,
+      "bodyTextHash": "3992e4cce01b5ecd67ce2d46d850d15b301ef9bafcb38da88fc6b9dfed6909a6",
+      "bodyTextPrefix": "개인 리서치 · 매수·매도 신호가 아닙니다 지수 밸류에이션 이력 S&P 500, 나스닥 종합, 코스피, 코스닥의 P",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "지수 밸류에이션 이력",
+      "hasCanvas": false,
+      "bodyTextLen": 701,
+      "bodyTextHash": "e5f7a2ea4d9a62415e69e7a18db421bcdbfc90ffff50790d849db3e9a3a5f45c",
+      "bodyTextPrefix": "개인 리서치 · 매수·매도 신호가 아닙니다 지수 밸류에이션 이력 S&P 500, 나스닥 종합, 코스피, 코스닥의 P",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [
+    "BRAND NOTE: no custom public/og.jpg — the platform will serve the og.grok.me placeholder. Custom cards are the default for games of every kind (DOM board/word games included), whimsical apps, creative tools, and brand-forward pages — only plain utilities (converters, CRUD trackers, admin dashboards) keep the placeholder. If this app is not a plain utility, finish the brand-asset pass per /workspace/.grok/skills/og/SKILL.md."
+  ],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "desktop: body text changed (256 -> 701 chars, hash mismatch)",
+    "mobile: body text changed (256 -> 701 chars, hash mismatch)"
+  ]
+}
